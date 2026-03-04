@@ -1,4 +1,11 @@
 package ru.gr05307
 
-class MainViewModel {
+import ru.gr05307.net.Server
+
+class MainViewModel(
+    val server: Server,
+) {
+    fun start(){
+        server.start()
+    }
 }
